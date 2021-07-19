@@ -6,13 +6,11 @@
 .parafonts {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 200;
-  color: white;
 }
 
 .headfonts {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-  color: white;
 }
 
 /* header */
@@ -51,4 +49,38 @@ nav li {
 /* navigation's <a> tag within li and main's Read more text having <a> tag*/
 a {
   text-decoration: none;
+  color: white;
+}
+
+/* ===================media query------------------------- */
+
+@media screen and (max-width: 1024px) {
+  header {
+    background-size: 110% 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    background-image: url("/Images/banner768.png");
+    background-size: 100% 100%;
+  }
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  nav h1,
+  a {
+    font-size: 1em;
+  }
+  nav ul {
+    margin-left: 0px;
+    margin-top: 1em;
+    /* border: 2px solid red; */
+  }
+  nav li {
+    display: block;
+    padding: 0.2em 0em;
+  }
 }
