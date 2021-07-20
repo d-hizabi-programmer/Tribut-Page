@@ -7,6 +7,7 @@
 .parafonts {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: normal;
+  text-align: justify;
 }
 
 .headfonts {
@@ -78,8 +79,7 @@ a {
 
 #img-div {
   border: 1px solid black;
-  padding: 1em;
-
+  padding: 0em 1em;
   /* border-radius: 0.5em; */
 }
 
@@ -90,10 +90,20 @@ a {
 }
 #about div p {
   text-align: center;
-  padding-bottom: 0.6em;
+  font-size: 1.2em;
+  margin: 0.5em;
 }
+
 #img-caption {
   text-align: center;
+  font-weight: lighter;
+}
+#about-div {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+#about-div p {
+  text-align: left;
 }
 
 #tribute-link {
